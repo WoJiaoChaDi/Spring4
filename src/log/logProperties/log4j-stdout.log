@@ -1,0 +1,19 @@
+2019-12-15 10:40:41,329 INFO  [CalculatorLoggingAgent.invoke()] - The Methodadd() begins with [2, 3]
+ 2019-12-15 10:40:41,332 INFO  [CalculatorLoggingAgent.invoke()] - The Methodadd() ends with null
+ 2019-12-15 10:40:41,333 INFO  [CalculatorLoggingAgent.invoke()] - The Methodmul() begins with [4, 5]
+ 2019-12-15 10:40:41,333 INFO  [CalculatorValidationAgent.invoke()] - The Methodmul() begins with [4, 5]
+ 2019-12-15 10:40:41,333 INFO  [CalculatorValidationAgent.invoke()] - The Methodmul() ends with null
+ 2019-12-15 10:40:41,333 INFO  [CalculatorLoggingAgent.invoke()] - The Methodmul() ends with null
+ 2019-12-15 10:41:11,563 INFO  [CalculatorLoggingAgent.invoke()] - The Methodadd() begins with [2, 3]
+ 2019-12-15 10:41:11,568 INFO  [CalculatorLoggingAgent.invoke()] - The Methodadd() ends with null
+ 2019-12-15 10:41:11,569 INFO  [CalculatorLoggingAgent.invoke()] - The Methodmul() begins with [4, 5]
+ 2019-12-15 10:41:11,569 INFO  [CalculatorValidationAgent.invoke()] - The Methodmul() begins with [4, 5]
+ 2019-12-15 10:41:11,569 INFO  [CalculatorValidationAgent.invoke()] - The Methodmul() ends with null
+ 2019-12-15 10:41:11,569 INFO  [CalculatorLoggingAgent.invoke()] - The Methodmul() ends with null
+ 2019-12-15 10:57:46,089 INFO  [com.chadi.aop.agent.CalculatorLoggingAgent.invoke()] - The Methodadd() begins with [2, 3]
+ 2019-12-15 10:57:46,092 INFO  [com.chadi.aop.agent.CalculatorLoggingAgent.invoke()] - The Methodadd() ends with null
+ 2019-12-15 10:57:46,093 INFO  [com.chadi.aop.agent.CalculatorLoggingAgent.invoke()] - The Methodmul() begins with [4, 5]
+ 2019-12-15 10:57:46,093 INFO  [com.chadi.aop.agent.CalculatorValidationAgent.invoke()] - The Methodmul() begins with [4, 5]
+ 2019-12-15 10:57:46,093 INFO  [com.chadi.aop.agent.CalculatorValidationAgent.invoke()] - The Methodmul() ends with null
+ 2019-12-15 10:57:46,093 INFO  [com.chadi.aop.agent.CalculatorLoggingAgent.invoke()] - The Methodmul() ends with null
+ 

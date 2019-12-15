@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--配置bean-->
+    <bean id="arithmetic" class="com.chadi.aop.agent.ArithmeticCalculatorImpl"></bean>
+
+    <!--配置切面的bean-->
+    <bean id="loggingAspect" class="com.chadi.aop.aspect.xml.LoggingAspect"></bean>
+
+    <!--配置aop-->
+    <aop:config>
+        <!--配置切点表达式-->
+        <aop:pointcut id="pointcut" expression="execution(public void com.chadi.aop.agent.ArithmeticCalculator.*(int, int ))"></aop:pointcut>
+
+        <!--配置切面以及通知-->
+        <aop:aspect ref="loggingAspect" order="2">
+            <aop:before pointcut-ref="pointcut" method="beforeMethod"></aop:before>
+            <aop:before pointcut-ref="pointcut" method="afterMethod"></aop:before>
+        </aop:aspect>
+    </aop:config>
+
+</beans>
